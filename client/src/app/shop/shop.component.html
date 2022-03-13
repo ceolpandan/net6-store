@@ -6,7 +6,7 @@
 
 <div class="container">
     <div class="row">
-        <section class="col-3">
+        <section class="col-3" id="filters">
             <h5 class="text-warning ms-3">Sort</h5>
             <select class="custom-select mb-5" (change)="onSortSelected($event.target.value)">
                 <option *ngFor="let sort of sortOptions" [value]="sort!.value">
@@ -22,7 +22,7 @@
             </ul>
 
             <h5 class="text-warning ms-3">Types</h5>
-            <ul class="list-group my-3 mb-4">
+            <ul class="list-group my-3 mb-1">
                 <li class="list-group-item" *ngFor="let type of types" [class.active]="type.id===shopParams.typeId"
                     (click)="onTypeSelected(type.id)">
                     {{type!.name}}

@@ -1,6 +1,3 @@
-a{
-    text-decoration: none;
-}
 
 .cart-no{
     position: absolute;
@@ -12,4 +9,17 @@ a{
     text-align: center;
     top: -12px;
     left: 33px;
+}
+
+nav a{
+    text-decoration: none;
+    color:white;
+
+    &.active{
+        color: #64888d;
+    }
+}
+nav a:hover{
+    color: #64888d;
+    cursor: pointer;
 }
